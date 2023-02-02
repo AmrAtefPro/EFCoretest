@@ -16,6 +16,7 @@ namespace EF_Core_test.Model
         [MaxLength(100)]
         public string? Descriptio { get; set; }
         public int? Age { get; set; }
+        public int? Phonenum { get; set; }
         public int CardStudentId { get; set; }
         public CardStudent CardStudent { get; set; }
         public Department Department { get; set; }
