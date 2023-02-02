@@ -25,7 +25,14 @@ namespace EF_Core_test.Model
         public virtual DbSet<CardStudent> CardStudent { get; set; }
         public virtual DbSet<Department> Department { get; set; }
         public virtual DbSet<Subject> Subject { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<StudentSubject>().HasKey(x => new {x.SubjectId,x.StudentId});
+            base.OnModelCreating(modelBuilder);
+        }
         //public virtual DbSet<StudentSubject> StudentSubject { get; set; }
+
 
     }
 }
