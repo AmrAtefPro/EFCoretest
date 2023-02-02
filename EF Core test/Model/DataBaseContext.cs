@@ -19,7 +19,7 @@ namespace EF_Core_test.Model
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source=.;Initial Catalog=EFTest;Integrated Security=True");
+            optionsBuilder.UseSqlServer(@"Data Source=DESKTOP-QFGNJ9B;Initial Catalog=EFTest;Integrated Security=True");
         }
         public virtual DbSet<Student> Student { get; set; }
         public virtual DbSet<CardStudent> CardStudent { get; set; }
