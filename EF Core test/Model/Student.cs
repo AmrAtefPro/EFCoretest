@@ -14,7 +14,7 @@ namespace EF_Core_test.Model
         [Required,MaxLength(255)]
         public string Name { get; set; }
         [MaxLength(100)]
-        public string? Descriptio { get; set; }
+        public string? Description { get; set; }
         public int? Age { get; set; }
         public int CardStudentId { get; set; }
         public CardStudent CardStudent { get; set; }
