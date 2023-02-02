@@ -11,6 +11,7 @@ namespace EF_Core_test.Model
         public int Id { get; set; }
         public string Name { get; set; }
         public string? Description { get; set; }
+        public string Date123 { get; set; }
         public List<Student> Students { get; set; }
 
     }
