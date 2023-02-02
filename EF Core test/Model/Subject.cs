@@ -10,6 +10,9 @@ namespace EF_Core_test.Model
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public string desc { get; set; }
+        public Subject() { }    
+
         public List<StudentSubject> ListStudents { get; set; }
 
     }
