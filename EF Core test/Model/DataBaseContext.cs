@@ -31,7 +31,7 @@ namespace EF_Core_test.Model
             modelBuilder.Entity<StudentSubject>().HasKey(x => new {x.SubjectId,x.StudentId});
             base.OnModelCreating(modelBuilder);
         }
-        //public virtual DbSet<StudentSubject> StudentSubject { get; set; }
+        public virtual DbSet<StudentSubject> StudentSubject { get; set; }
 
 
     }
